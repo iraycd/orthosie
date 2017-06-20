@@ -23,25 +23,25 @@ class ItemSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Item
-        depth = 1
+        fields = '__all__'
 
 
 class GrocerySerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Grocery
-        depth = 1
+        fields = '__all__'
 
 
 class ProduceSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Produce
-        depth = 1
+        fields = '__all__'
 
 
 class VendorSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Vendor
-        depth = 1
+        fields = '__all__'
